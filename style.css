@@ -1,0 +1,95 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #3498d5;
+}
+
+.wrapper{
+    height: 260px;
+    background-color: #fff;
+    max-width: 410px;
+    border-radius: 7px;
+    padding: 16px;
+}
+.active{
+    height: 100%;
+}
+
+header h1{
+    font-size: 21px;
+    font-weight: 500;
+}
+
+header p{
+    margin-top: 5px;
+    color: #474747;
+    font-size: 16px;
+}
+
+.wrapper .form{
+    margin: 20px 0 30px;
+}
+
+.form :where(input,button){
+    width:100%;
+    height: 55px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.form input{
+    font-size: 18px;
+    padding: 0 17px;
+    border: 1px solid #999;
+}
+
+.form button{
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 17px;
+    background: #3498D8;
+    opacity: 0.5;
+    pointer-events: none;
+    user-select: none;
+    
+}
+.form button.outline{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.qr-code{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-qr{
+    padding: 10px 10px;
+    display: flex;
+    height: 50%;
+    width: 50%;
+    opacity: 0;
+    pointer-events: none;   
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    user-select: none;
+}
+
+
+.active .img-qr{
+    opacity: 1;
+
+}
